@@ -1,0 +1,13 @@
+version: "2"
+services:
+    tensorflow:
+        image: adolphlwq/docker-tensorflow:v1.0.0
+        volumes:
+          - ./work:/work
+        environment:
+            PASSWORD: admin
+        ports:
+          - 8888:8888
+          - 6006:6006
+        working_dir: /work
+    
